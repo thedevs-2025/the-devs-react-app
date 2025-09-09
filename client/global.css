@@ -1,0 +1,172 @@
+/** @import must precede all other statements */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 222 90% 56%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 220 40% 96%;
+    --secondary-foreground: 222 47% 14%;
+
+    --muted: 220 16% 92%;
+    --muted-foreground: 220 12% 40%;
+
+    --accent: 224 90% 60%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 16% 90%;
+    --input: 220 16% 90%;
+    --ring: 222 90% 56%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 47% 12%;
+    --sidebar-primary: 222 90% 56%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 220 40% 96%;
+    --sidebar-accent-foreground: 222 47% 14%;
+    --sidebar-border: 220 16% 90%;
+    --sidebar-ring: 222 90% 56%;
+  }
+
+  .dark {
+    --background: 224 40% 10%;
+    --foreground: 210 40% 98%;
+
+    --card: 224 40% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 224 40% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 222 90% 66%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 220 25% 18%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 25% 18%;
+    --muted-foreground: 215 20% 70%;
+
+    --accent: 222 50% 22%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 70% 40%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 25% 22%;
+    --input: 220 25% 22%;
+    --ring: 222 90% 66%;
+
+    --sidebar-background: 224 30% 12%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 222 90% 66%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 224 30% 16%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 224 30% 16%;
+    --sidebar-ring: 222 90% 66%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .bg-binary {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='160'%3E%3Cg fill='%23334155' fill-opacity='0.22' font-family='monospace' font-size='14'%3E%3Ctext x='0' y='16'%3E01010100110010100101001001101001010010100110%3C/text%3E%3Ctext x='0' y='36'%3E10010100101001011001010010100101001011001001%3C/text%3E%3Ctext x='0' y='56'%3E01010011100101001010100110010100100101100101%3C/text%3E%3Ctext x='0' y='76'%3E11001010010100100110100101001010011001010010%3C/text%3E%3Ctext x='0' y='96'%3E01010100110010100101001001101001010010100110%3C/text%3E%3Ctext x='0' y='116'%3E10010100101001011001010010100101001011001001%3C/text%3E%3Ctext x='0' y='136'%3E01010011100101001010100110010100100101100101%3C/text%3E%3C/g%3E%3C/svg%3E");
+    background-size: 320px 160px;
+    background-repeat: repeat;
+  }
+}
+
+@font-face {
+  font-family: "Agile";
+  src: url("/fonts/agile.woff2") format("woff2"),
+       url("/fonts/agile.ttf") format("truetype"),
+       url("/fonts/agile.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Meriva";
+  src: url("/fonts/meriva.woff2") format("woff2"),
+       url("/fonts/meriva.ttf") format("truetype"),
+       url("/fonts/meriva.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mooxy";
+  src: url("/fonts/mooxy.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quorova";
+  src: url("/fonts/QuorovaDEMO-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quorova";
+  src: url("/fonts/QuorovaDEMO-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quorova";
+  src: url("/fonts/QuorovaDEMO-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quorova";
+  src: url("/fonts/QuorovaDEMO-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quorova";
+  src: url("/fonts/QuorovaDEMO-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
