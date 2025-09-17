@@ -13,11 +13,14 @@ export default {
       },
     },
     extend: {
-       fontFamily: {
+      fontFamily: {
         agile: ["Agile", "sans-serif"],
         meriva: ["Meriva", "sans-serif"],
         mooxy: ["Mooxy", "sans-serif"],
         quorova: ["Quorova", "sans-serif"],
+        roba: ["Roba", "sans-serif"],
+        groote: ["Groote", "sans-serif"], 
+        raligo: ["Raligo", "sans-serif"], 
       },
       colors: {
         border: "hsl(var(--border))",

@@ -7,24 +7,11 @@ import { useEffect, useRef, useState } from "react";
 const EnhancedLogo = () => {
   return (
     <div className="relative">
-      {/* Ombre d'arrière-plan diffuse */}
-      <div className="absolute inset-0 transform translate-x-1 translate-y-1 blur-md opacity-20">
-        <span className="font-agile text-3xl font-black bg-gradient-to-br from-slate-800 to-slate-600 bg-clip-text text-transparent">
-          tHE dEV'S
-        </span>
-      </div>
 
-      {/* Ombre intermédiaire */}
-      <div className="absolute inset-0 transform translate-x-0.5 translate-y-0.5 blur-sm opacity-40">
-        <span className="font-agile text-3xl font-black bg-gradient-to-br from-slate-700 to-slate-500 bg-clip-text text-transparent">
-          tHE dEV'S
-        </span>
-      </div>
-
-      {/* Texte principal avec dégradé complexe */}
+      {/* Texte principal avec dégradé complexe - groote */}
       <div className="relative z-10">
-        <span className="font-meriva text-3xl font-black bg-gradient-to-br from-blue-800 via-blue-500 via-indigo-500 to-blue-700 bg-clip-text text-transparent drop-shadow-[0_2px_4px_rgba(59,130,246,0.2)]">
-          tHE dEV'S
+        <span className="font-raligo text-3xl font-black bg-gradient-to-br from-blue-800 via-blue-500 via-indigo-500 to-blue-700 bg-clip-text text-transparent drop-shadow-[0_2px_4px_rgba(59,130,246,0.2)]">
+          thedev's
         </span>
       </div>
 

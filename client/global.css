@@ -110,6 +110,8 @@
   }
 }
 
+
+/* Agile Font */
 @font-face {
   font-family: "Agile";
   src: url("/fonts/agile.woff2") format("woff2"),
@@ -117,8 +119,10 @@
        url("/fonts/agile.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
+/* Meriva Font */
 @font-face {
   font-family: "Meriva";
   src: url("/fonts/meriva.woff2") format("woff2"),
@@ -126,20 +130,25 @@
        url("/fonts/meriva.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
+/* Mooxy Font */
 @font-face {
   font-family: "Mooxy";
   src: url("/fonts/mooxy.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
+/* Quorova Font Family - Multiple Weights */
 @font-face {
   font-family: "Quorova";
   src: url("/fonts/QuorovaDEMO-Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -147,6 +156,7 @@
   src: url("/fonts/QuorovaDEMO-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -154,6 +164,7 @@
   src: url("/fonts/QuorovaDEMO-Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -161,6 +172,7 @@
   src: url("/fonts/QuorovaDEMO-SemiBold.otf") format("opentype");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -168,5 +180,29 @@
   src: url("/fonts/QuorovaDEMO-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
+/* Roba Font - CORRECTED */
+@font-face {
+  font-family: "Roba";
+  src: url("/fonts/Roba.woff2") format("woff2"),
+       url("/fonts/Roba.ttf") format("truetype");
+  font-weight: 900; /* Changed from 700 to 900 for black weight */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Groote Font - NOUVELLE POLICE */
+@font-face {
+  font-family: "Groote";
+  src: url("/fonts/Groote-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raligo";
+  src: url("/fonts/Raligo-DEMO-BF68ad3307e258b.otf") ;
+  font-display: swap;
+}
